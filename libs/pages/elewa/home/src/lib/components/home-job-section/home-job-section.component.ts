@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'elewa-group-home-job-section',
@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-job-section.component.scss'],
 })
 export class HomeJobSectionComponent {
-  @Input() message:string
-  @Input() urlLink:string
-  @Input() redirectUrl:string
-  @Input() text:string
-  @Input() callToActionIntro:string
+  @Input() message:"Become part of our family"
+  @Input() urlLink:"view"
+  @Input() redirectUrl:"/jobs"
+  @Input() text:""
+  @Input() callToActionIntro:"opportunities"
 }
