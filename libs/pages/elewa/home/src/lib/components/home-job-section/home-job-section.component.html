@@ -1,7 +1,10 @@
 <!-- <p>home-job-section works!</p> -->
 <section class="home-jobs-section">
-    <span >
-        
-    </span>
-  
-</section>
+    <section class="home-jobs-section">
+        <span >
+            {{message}}
+        </span>
+        <span [ngStyle]="{ 'text-align':text }">
+            {{callToActionIntro}} <a class="homeLink" routerLink={{redirectUrl}}>{{urlLink}}</a>
+        </span>
+    </section>
